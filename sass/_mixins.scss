@@ -1,0 +1,32 @@
+// MEDIA QUERY MANAGER
+/*
+1100px-68.75em -largest
+900px- 56.25em -large
+700px - 43.75em medium
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == largest {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    } //1100px
+  }
+
+  @if $breakpoint == large {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+
+  @if $breakpoint == medium {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    } //700px
+  }
+
+  @if $breakpoint == small {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    } //500px
+  }
+}

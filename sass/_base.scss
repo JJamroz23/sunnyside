@@ -1,0 +1,49 @@
+// Color variables
+
+// PRIMARY
+
+$color-red: rgb(254, 120, 103);
+$color-yellow: rgb(250, 212, 0);
+$color-green-dark: rgb(30, 88, 76);
+$color-blue: rgb(25, 83, 107);
+$color-green-light: rgb(145, 211, 197);
+$color-grey-dark: rgb(77, 77, 77);
+
+// NEUTRAL
+$color-blue-dark: rgb(35, 48, 62);
+$color-blue-grey-dark: rgb(90, 99, 108);
+$color-blue-grey-light: rgb(129, 132, 152);
+$color-blue-grey: rgb(167, 171, 174);
+$color-white: rgb(255, 255, 255);
+
+// FONT VARIABLES
+$font-primary: "Barlow", sans-serif;
+$font-display: "Fraunces", serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include respond(medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark;
+  font-weight: 600;
+  line-height: 1.6;
+}

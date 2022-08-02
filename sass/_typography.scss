@@ -1,0 +1,75 @@
+.heading-1 {
+  font-size: 4.5rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  font-family: Fraunces;
+  font-weight: 900;
+}
+
+.heading-2 {
+  font-size: 3.5rem;
+  font-family: $font-display;
+  font-weight: 900;
+}
+
+.heading-3 {
+  font-size: 2.5rem;
+  font-family: $font-display;
+  font-weight: 900;
+  color: $color-green-dark;
+}
+
+.heading-4 {
+  font-size: 2rem;
+  font-family: $font-display;
+  font-weight: 700;
+  color: $color-blue-grey;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-family: $font-display;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-footer {
+  font-size: 3rem;
+  transition: all 0.3s;
+  color: $color-green-dark;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn-header {
+  color: $color-white;
+  font-size: 2rem;
+  transition: all 0.3s;
+  padding: 2rem 2rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn-story {
+  display: inherit;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: $font-display;
+  font-weight: 700;
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @include respond(medium) {
+    justify-content: center;
+  }
+}

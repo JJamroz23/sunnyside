@@ -1,0 +1,38 @@
+.footer {
+  padding: 10rem 0;
+  background-color: $color-green-light;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+  }
+
+  &__item {
+    font-size: 1.8rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $color-green-dark;
+    transition: all 0.3s;
+    display: inline-block;
+
+    &:hover,
+    &:active {
+      transform: scale(1.05);
+    }
+  }
+
+  &__icons {
+    display: flex;
+    gap: 2rem;
+    padding: 5rem 0 0 0;
+  }
+}

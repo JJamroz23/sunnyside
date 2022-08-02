@@ -1,0 +1,20 @@
+.section-gallery {
+  display: flex;
+
+  @include respond(medium) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    // grid-template-rows: repeat();
+  }
+}
+
+.gallery__photo {
+  width: 25%;
+  height: auto;
+  display: block;
+
+  @include respond(medium) {
+    width: 100%;
+  }
+}

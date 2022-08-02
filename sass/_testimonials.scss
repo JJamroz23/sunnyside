@@ -1,0 +1,53 @@
+.section-testimonials {
+  text-align: center;
+  padding: 10rem;
+
+  @include respond(large) {
+    padding: 10rem 2rem;
+  }
+
+  @include respond(medium) {
+    padding: 5rem 2rem;
+  }
+}
+
+.testimonials-box {
+  padding: 5rem 0;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(medium) {
+    flex-direction: column;
+    gap: 10rem;
+  }
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
+  &__photo {
+    width: 6.5rem;
+    height: 6.5rem;
+    border-radius: 50%;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+  }
+
+  &__user-name {
+    font-size: 1.8rem;
+    font-family: $font-display;
+    font-weight: 700;
+    color: #222;
+  }
+
+  &__user-job {
+    font-size: 1.3rem;
+    color: $color-blue-grey-light;
+  }
+}
